@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 3, 2014, 4:59:00 PM
+    Author     : ghal
+*/
+
+html{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/via.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+h1{
+    font-weight: 300;
+}
+#header{
+    width:100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color:white;
+    margin-bottom:80px;
+}
+#header img{
+    background-color: rgba(250, 250, 250, 0.9);
+    border-radius: 100%;
+    width:5em;
+}
+#login-index{
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 40%;
+    margin: 0 auto;
+    color: white;
+}
+input{
+    border-radius: 5px;
+    font-size: 1.5em;
+    border:4px solid gray;
+    height: 2em;
+    border:2px solid whitesmoke;
+}
+//login button
+#login-index > form > input[type="submit"]{
+    width:70%;
+    background-color: #2980b9;
+    font-weight: 700;
+    margin: 15px;
+    margin-bottom: 15px;
+}
+input[value="log in"]:hover{
+    background-color: #3498db;
+}
+select{
+    border-radius: 5px;
+    font-size: 1.5em;
+    border:4px solid gray;
+    height: 2em;
+    border:2px solid whitesmoke;
+    margin-bottom: 15px;
+}
+//You dont have an account? register
+/*#register-click {
+    color: whitesmoke;
+    background-color: white;
+}*/
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+}
+.register-container{
+    position: fixed;
+    width:100%;
+    text-align: center;
+    //margin-top:20%;
+    top:20%;
+    z-index: 9999;
+
+}
+
+.register-container form{
+    margin: 0 auto;
+    width:30%;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+.register-container input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border:2px solid gray;
+
+}

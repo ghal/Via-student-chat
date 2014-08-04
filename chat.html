@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+        <title>ViaStudents Chat Room</title>
+        <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/chat.css" />
+
+    </head>
+    <body onload="checkUsername();">
+
+        <div id="wrapper" >
+            <div id="header">
+                <img src="img/logo.png"></img>
+                <br />
+                <h1>ViaStudents Chat Room</h1>
+            </div>
+            <div id="chat-conainer">
+                <div class="write-chat">
+                    <input id="chat-textbox" type="text" name="chat-textbox"/>
+                    <input id="chat-send" type="submit" value="send message"/>
+
+                </div>
+            </div>
+            <div id="chatuser">
+                Welcome  <script>document.write(getUsername());</script>
+            </div>
+
+            <div class="overlay">
+                <div class="register-container">
+                    <form>
+                        <h1>Register</h1>
+                        <br/>
+                        <input type="text" name="register-username"  placeholder="Enter username" size="20"></input>
+                        <br/>
+                        <input type="email" name="register-email" placeholder="Enter email" size="20"></input>
+                        <br/>
+                        <input type="password" name="register-password" placeholder="Enter password" size="20"></input>
+                        <br/>
+                        <input type="submit" value="Register" onclick="register();"/>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>

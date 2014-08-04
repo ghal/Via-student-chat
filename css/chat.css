@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 4, 2014, 10:12:33 AM
+    Author     : ghal
+*/
+
+.write-chat{
+    position: absolute;
+    height:100px;
+    bottom: 0;
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    //border-top: 4px solid grey;
+    margin: 0 auto;
+    padding-top:5px;
+    text-align: center;
+}
+#chat-textbox{
+    width:75%;
+    height:90px;
+
+}
+#chat-send{
+    width:15%;
+    height:90px;
+    float: next;
+    font-weight: 300;
+}
+#chat-send:hover{
+    background-color: #95a5a6;
+}
+#chatuser{
+    position: fixed;
+    top: 0;
+    left:90%;
+    //width:100px;
+    //height:50px;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:5px;
+    //z-index: 99999;
+
+}

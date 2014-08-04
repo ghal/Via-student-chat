@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+        <title>ViaStudents Chat Room</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,greek-ext' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700&subset=latin,greek' rel='stylesheet' type='text/css'/>
+        <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    </head>
+    <body >
+        <div id="wrapper" >
+            <div id="header">
+                <img src="img/logo.png"></img>
+                <br />
+                <h1>Welcome to ViaStudents Chat Room</h1>
+            </div>
+
+            <div id="login-index" >
+                <h1>Enter your credentials</h1>
+                <form>
+                    <div class="form">
+                        <input type="text" name="username" placeholder="username" size="20"></input>
+                    </div>
+                    <br />
+                    <div class="form">
+                        <input type="password" name="password" placeholder="password" size="20"></input>
+                    </div>
+                    <br/>
+
+                    <select id="lang">
+                        <option hidden="true" value="" disabled="disabled" selected="selected" >Choose Language...</option>
+                        <option value="ar">ar</option><option value="bg">bg</option><option value="ca">ca</option><option value="cs">cs</option><option value="da">da</option><option value="de">de</option><option value="el">el</option><option value="en">en</option><option value="es">es</option><option value="et">et</option><option value="fa">fa</option><option value="fi">fi</option><option value="fr">fr</option><option value="he">he</option><option value="hi">hi</option><option value="ht">ht</option><option value="hu">hu</option><option value="id">id</option><option value="it">it</option><option value="ja">ja</option><option value="ko">ko</option><option value="lt">lt</option><option value="lv">lv</option><option value="ms">ms</option><option value="mww">mww</option><option value="nl">nl</option><option value="no">no</option><option value="pl">pl</option><option value="pt">pt</option><option value="ro">ro</option><option value="ru">ru</option><option value="sk">sk</option><option value="sl">sl</option><option value="sv">sv</option><option value="th">th</option><option value="tr">tr</option><option value="uk">uk</option><option value="ur">ur</option><option value="vi">vi</option><option value="zh-CHS">zh-CHS</option><option value="zh-CHT">zh-CHT</option>
+                    </select>
+                    <br/>
+                    <input type="submit" value="Log in" onclick="login();"/>
+                    <br/>
+                    <label>You dont have an account? <a id="register-click" href="#">register</a></label>
+                </form>
+            </div>
+            <div class="overlay">
+                <div class="register-container">
+                    <form>
+                        <h1>Register</h1>
+                        <br/>
+                        <input type="text" name="register-username"  placeholder="Enter username" size="20"></input>
+                        <br/>
+                        <input type="email" name="register-email" placeholder="Enter email" size="20"></input>
+                        <br/>
+                        <input type="password" name="register-password" placeholder="Enter password" size="20"></input>
+                        <br/>
+                        <input type="submit" value="Register" onclick="register();"/>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+
+</html>
